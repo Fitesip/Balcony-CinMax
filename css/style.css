@@ -1,0 +1,832 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat/Montserrat.ttf");
+}
+@font-face {
+    font-family: Geologica;
+    src: url("Geologica/Geologica.ttf");
+}
+*, html {
+    margin: unset;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+a,p,h1,h2,h3,input,button {
+    font-family: Geologica, serif;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 1440px;
+    border-bottom: 6px solid #006633;
+}
+.search {
+    display: flex;
+    gap: 5px;
+}
+.searchinput {
+    width: 283px;
+    height: 22px;
+    border: 1px solid #006633;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+}
+.pages {
+    display: flex;
+    gap: 50px;
+}
+.pages a {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+}
+.promoblock {
+    max-width: 1440px;
+    height: 605px;
+    display: flex;
+}
+.arrows {
+    display: flex;
+    position: absolute;
+    width: 1440px;
+    justify-content: space-between;
+    margin-top: 263.5px;
+    z-index: 10;
+}
+.promocard {
+    background: url("../images/dedroso.png");
+    padding: 45px 200px;
+    color: #FFFFFF;
+    width: 1440px;
+    flex-shrink: 0;
+    transition: 0.5s;
+}
+.promocards {
+    display: flex;
+    overflow: hidden;
+    max-width: 1440px;
+}
+.promocardtext h1 {
+    font-size: 30px;
+}
+.promocardtext p {
+    font-size: 20px;
+    max-width: 410px;
+    margin-top: 72px;
+}
+.promocardbuttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 72px;
+}
+.button1 {
+    background: #006633;
+    padding: 25px 33px;
+    font-size: 20px;
+    color: #66CC99;
+    border: none;
+    border-radius: 19px;
+    transition: 0.2s;
+}
+.button1:hover {
+    background: #66CC99;
+    color: #006633;
+}
+
+.novinki {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.wrapper {
+    display: flex;
+    max-width: 1272px;
+
+    padding: 0;
+    overflow: hidden;
+}
+.wrapperpage {
+    display: flex;
+    gap: 60px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1;
+    transition: 0.5s;
+}
+.cardimage {
+    width: 273px;
+    height: 187px;
+    background: #D9D9D9;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.cardimage img {
+    width: 273px;
+    height: 187px;
+}
+.wrapperarrows {
+    position: absolute;
+    width: 1440px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 130px;
+    z-index: 10;
+}
+.classica {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+footer {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px 20px;
+    background: rgba(11, 11, 11, 0.1);
+    border-top: 1px solid #007241;
+    max-width: 1860px;
+    width: 100%;
+    align-items: center;
+}
+.footerpages {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    width: 329px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.logoandcopyright {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cinmax {
+    color: #006633;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.socials {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    width: 329px;
+}
+.socials img {
+    max-width: 30px;
+    max-height: 30px;
+}
+.background1 {
+    position: absolute;
+    padding-left: 1230px;
+}
+.background2 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    z-index: -1;
+}
+.background3 {
+    position: absolute;
+    top: 1050px;
+    right: 570px;
+    z-index: -1;
+}
+.background4 {
+    position: absolute;
+    right: 0;
+    top: 720px;
+    z-index: -1;
+}
+.background5 {
+    position: absolute;
+    right: 0;
+    top: 1350px;
+    z-index: -1;
+}
+.serialicontainer {
+    display: flex;
+    width: 1440px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+}
+.serialih1 {
+    font-size: 40px;
+    color: #009966;
+    font-weight: 400;
+}
+.seriali {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.background6 {
+    position: absolute;
+    z-index: -1;
+    top: 163px;
+    left: 123px;
+}
+.background7 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 136px;
+}
+.background8 {
+    position: absolute;
+    z-index: -1;
+    top: 989px;
+    left: 0;
+}
+.background9 {
+    position: absolute;
+    z-index: -1;
+    top: 556px;
+    right: 310px;
+}
+.background10 {
+    position: absolute;
+    z-index: -1;
+    top: 910px;
+    right: 611px;
+}
+.aktericontainer {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.akter {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #009966;
+    font-size: 36px;
+    gap: 12px;
+}
+.infa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+hr {
+    width: 1440px;
+    background: #007241;
+}
+.infa p {
+    max-width: 580px;
+}
+.filmi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filmi p {
+    font-size: 32px;
+    font-weight: 400;
+}
+.filmicontainer {
+    display: flex;
+    gap: 40px;
+}
+.drugayainfa {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.miniinfa {
+    width: 300px;
+    display: flex;
+    gap: 20px;
+}
+.miniinfa h3 {
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+}
+.miniinfa p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.background11 {
+    position: absolute;
+    z-index: -1;
+    left: 437px;
+    top: 122px;
+}
+.background12 {
+    position: absolute;
+    z-index: -1;
+    top: 157px;
+    left: 115px;
+}
+.background13 {
+    position: absolute;
+    z-index: -1;
+    top: 1061px;
+    left: 0;
+}
+.background14 {
+    position: absolute;
+    z-index: -1;
+    top: 743px;
+    left: 52px;
+}
+.voyticontainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.voyticontainer h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.form {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 415px;
+}
+.formelement {
+    display: flex;
+    gap: 23px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.formelement p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.formelement input {
+    width: 294px;
+    height: 39px;
+    background: rgba(217, 217, 217, 0.46);
+    border: none;
+    border-radius: 22px;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px;
+    color: #FFFFFF;
+}
+.vhod {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #006633;
+    padding: 15px 122px;
+    border-radius: 22px;
+    background: #66CC99;
+    border: none;
+}
+.form a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #66CC99;
+}
+.background15 {
+    position: absolute;
+    z-index: -1;
+    top: 104px;
+    right: 2px;
+}
+.background16 {
+    position: absolute;
+    z-index: -1;
+    top: 1000px;
+    left: 0;
+}
+.background17 {
+    position: absolute;
+    z-index: -1;
+    top: 329px;
+}
+.filmcontainer {
+    display: flex;
+    margin-top: 60px;
+    width: 1440px;
+    align-items: center;
+    flex-direction: column;
+}
+.maininfo {
+    display: flex;
+    gap: 40px;
+}
+.textblock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.textblock h2 {
+    color: rgba(0, 0, 0, 0.36);
+    font-size: 20px;
+    font-weight: 400;
+}
+.textblock p {
+    max-width: 760px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.nazvanie {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nazvanie h1 {
+    color: #009966;
+    font-size: 36px;
+    font-weight: 400;
+}
+.nazvanie p {
+    color: #6F0303;
+    font-size: 20px;
+    margin: unset;
+}
+.smotret {
+    margin-top: 30px;
+    padding: 15px 104px;
+    background: #006633;
+    border: none;
+    border-radius: 22px;
+    color: #66CC99;
+    font-size: 20px;
+    font-weight: 400;
+    width: max-content;
+}
+.fullinfo {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.infoelement {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoelement h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #787878;
+}
+.infoelement p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.trailer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 30px;
+}
+.trailercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playbutton {
+    position: absolute;
+}
+@media screen and (max-width: 1024px) {
+    header {
+        width: 984px;
+    }
+    .searchinput {
+        width: 233px;
+    }
+    .pages a {
+        font-size: 16px;
+    }
+    .pages {
+        gap: 30px;
+    }
+    .promoblock {
+        width: 1024px;
+    }
+    .background1 {
+        margin-left: 831px;
+        right: 0;
+    }
+    .cardimage {
+        width: 193px;
+        height: 133px;
+    }
+    .wrapperarrows {
+        width: 1024px;
+    }
+    .wrapper {
+        max-width: 907px;
+    }
+    .wrapperpage {
+        gap: 45px;
+    }
+    .background5 {
+        top: 1250px;
+    }
+    .promocard {
+        padding: 45px 100px;
+        width: 1024px;
+    }
+    .arrows {
+        width: 1024px;
+    }
+    .filmicontainer img {
+        width: 120px;
+        height: 170px;
+    }
+    .filmicontainer {
+        gap: 20px;
+    }
+    .infa p {
+        max-width: 400px;
+    }
+    .infa {
+        font-size: 16px;
+    }
+    .name img {
+        width: 200px;
+        height: 230px;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .promocards {
+        max-width: 1024px;
+    }
+    .background11 {
+        left: 800px;
+    }
+    .background12 {
+        left: 27px;
+    }
+    .background13 {
+        top: 800px
+    }
+    .background14 {
+        top: 630px
+    }
+    .serialicontainer {
+        width: 1024px;
+    }
+    .background6 {
+        scale: 0.7;
+        left: 80px;
+    }
+    .background8 {
+        top: 880px;
+    }
+    .background10 {
+        top: 870px
+    }
+    .filmcontainer {
+        width: 1024px;
+    }
+    .textblock p {
+        font-size: 16px;
+        max-width: 600px;
+    }
+    .infoelement {
+        width: 500px;
+    }
+    .infoelement p {
+        font-size: 16px;
+        max-width: 303px;
+    }
+    .fullinfo {
+        gap: 24px;
+    }
+}
+@media screen and (max-width: 420px) {
+    header {
+        width: 410px;
+        padding: 0 5px;
+        height: 54px;
+    }
+    .searchinput {
+        width: 50px;
+    }
+    .pages a {
+        font-size: 8px;
+    }
+    .pages {
+        gap: 10px;
+    }
+    header img {
+        width: 75px;
+        height: 19px;
+    }
+    .search img {
+        width: 20px;
+        height: 20px;
+    }
+    .search {
+        align-items: center;
+    }
+    .promocard {
+        width: 420px;
+        padding: 20px;
+        height: 235px;
+
+    }
+    .promocardtext {
+        font-size: 15px;
+    }
+    .promocardbuttons {
+        margin-top: 10px;
+    }
+    .promocardtext p {
+        margin-top: 50px;
+        font-size: 12px;
+        max-width: 277px;
+    }
+    .promoblock {
+        width: 420px;
+    }
+    .cardimage {
+        width: 77px;
+        height: 53px;
+        border-radius: 12px;
+    }
+    .card {
+        font-size: 12px;
+    }
+    .wrapper {
+        max-width: 353px;
+        padding: 0;
+    }
+    .wrapperpage {
+        gap: 15px;
+    }
+    .classica {
+        font-size: 13px;
+    }
+    .novinki {
+        font-size: 13px;
+    }
+    .arrows {
+        display: none;
+    }
+    .background1 {
+        display: none;
+    }
+    .background2 {
+        width: 100px;
+        height: 250px;
+    }
+    .wrapperarrows {
+        width: 420px;
+        padding-top: 80px;
+    }
+    .wrapperarrows img {
+        width: 20px;
+        height: 20px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerpages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .socials {
+        justify-content: center;
+    }
+    .background5 {
+        display: none;
+    }
+    .background4 {
+        scale: 0.3;
+        top: 650px;
+    }
+    .infa p {
+        max-width: 350px;
+
+    }
+    .infa {
+        font-size: 10px;
+    }
+    .filmicontainer img {
+        width: 50px;
+        height: 80px;
+    }
+    .filmicontainer {
+        gap: 5px;
+    }
+    .filmi p {
+        font-size: 16px;
+    }
+    .filmi {
+        align-items: center;
+    }
+    .akter {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promocards {
+        max-width: 420px;
+    }
+    .promocardtext h1 {
+        font-size: 15px;
+    }
+    .button1 {
+        font-size: 10px;
+        padding: 15px 5px;
+        height: max-content;
+    }
+    .background6 {
+        width: 150px;
+        height: 160px;
+    }
+    .background7 {
+        width: 50px;
+        height: 100px;
+    }
+    .maininfo {
+
+    }
+    .maininfo img {
+        width: 100px;
+        height: 150px;
+    }
+    .nazvanie h1 {
+        font-size: 24px;
+    }
+    .textblock h2 {
+        font-size: 10px;
+        max-width: 400px;
+    }
+    .textblock p {
+        font-size: 8px;
+        max-width: 400px;
+    }
+    .smotret {
+        font-size: 16px;
+        padding: 7px 20px;
+    }
+    .textblock {
+        gap: 10px;
+    }
+    .infoelement {
+        width: 200px;
+    }
+    .infoelement h2 {
+        font-size: 8px;
+    }
+    .infoelement p {
+        font-size: 8px;
+        max-width: 130px;
+    }
+    .fullinfo {
+        gap: 10px;
+    }
+    .filmcontainer {
+        width: 420px;
+    }
+    .trailercontainer img {
+        width: 400px;
+        height: 200px;
+    }
+}
